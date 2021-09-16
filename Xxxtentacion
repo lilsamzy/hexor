@@ -1,0 +1,69 @@
+{ 
+  "Version": "1.1", 
+  "Message": "TEST PAY+SSL MEXICO by @dankelthaher", 
+  "Servers": [ 
+  { 
+      "Name": "MTN UNLIMITED", 
+      "SSHHost": "d1wkd4vb9emk64.cloudfront.net", 
+      "SSHPort": "22", 
+      "Flag": "US",
+      "DropBear": "", 
+      "SSLPort": "443", 
+      "ProxyPort": "80"
+    },   
+    { 
+      "Name": "MTN SS UNLIMITED", 
+      "SSHHost": "pipul.tv", 
+      "SSHPort": "80",  
+      "Flag": "US",
+      "DropBear": "", 
+      "SSLPort": "443", 
+      "ProxyPort": "80" 
+    }, 
+    { 
+      "Name": "MTN TIDAL", 
+      "SSHHost": "resources.tidal.com", 
+      "SSHPort": "22", 
+      "Flag": "US",
+      "DropBear": "", 
+      "SSLPort": "443", 
+      "ProxyPort": "8080"
+    } 
+  ], 
+
+  "Tweaks": [ 
+    { 
+      "Name": "MTN UNLIMITED", 
+      "Flag": "NG",
+      "SSL": true, 
+      "Direct": false, 
+      "Payws": "GET / HTTP/1.1[crlf]Host: d2973f0hr9fv1b.cloudfront.net[crlf]Connection: Upgrade[crlf]User-Agent: [ua]Host: d2973f0hr9fv1b.cloudfront.net[crlf]Upgrade: websocket[crlf][crlf]", 
+      "Payload": "d2973f0hr9fv1b.cloudfront.net", 
+      "CustomProxy": true, 
+      "ProxyHost": "d2973f0hr9fv1b.cloudfront.net", 
+      "ProxyPort": "443" 
+    },
+    {
+      "Name": "MTN SS UNLIMITED", 
+      "Flag": "NG",
+      "SSL": true, 
+      "Direct": false, 
+      "Payws": "GET / HTTP/1.1[crlf]Host: ws.pchexor.cf[crlf]Connection: Keep-Alive[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]", 
+      "Payload": "ws.pchexor.cf", 
+      "CustomProxy": true, 
+      "ProxyHost": "ws.pchexor.cf", 
+      "ProxyPort": "443" 
+    },
+    { 
+      "Name": "MTN TIDAL",  
+      "Flag": "US",
+      "SSL": true, 
+      "Direct": false, 
+      "Payws": "GET / HTTP/1.1[crlf]Host: d2973f0hr9fv1b.cloudfront.net[crlf]Connection: Upgrade[crlf]User-Agent: [ua]Host: d2973f0hr9fv1b.cloudfront.net[crlf]Upgrade: websocket[crlf][crlf]", 
+      "Payload": "d2973f0hr9fv1b.cloudfront.net", 
+      "CustomProxy": true, 
+      "ProxyHost": "d2973f0hr9fv1b.cloudfront.net", 
+      "ProxyPort": "443" 
+    }
+  ] 
+}
