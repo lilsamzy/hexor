@@ -458,7 +458,7 @@ function payDataWithFlutterWave(){
         dataType: "json",
         success:function(result){
             console.log(result);
-            let amount = result.denomination
+            let amount = "1";
             amount = "1";
             let email = result.email;
             if (email == null){
@@ -467,17 +467,17 @@ function payDataWithFlutterWave(){
             let msisdn = result.msisdn
             let phone = result.phone
             let provider = result.operator
-            let totalAmount = parseInt(result.totalAmount)
+            let totalAmount = "1";
             let product_id = result.product_id
             let monnify_api_key = result.monnify_api_key
             let monnify_contract_code = result.monnify_contract_code
             let serviceCharge = result.serviceCharge
-            let dataAmount = result.dataAmount
+            let dataAmount = "1";
             let flutter_encryption_key = result.flutter_encryption_key
             let flutter_public_key = result.flutter_public_key
             let name = result.name
             let tx_ref = result.tx_ref
-            totalAmount = parseInt(totalAmount)
+            totalAmount = "1";
             let balanceStats = result.balanceStats
             if(!balanceStats){
                 swal('Oops', 'Service Currently not available', 'error');
